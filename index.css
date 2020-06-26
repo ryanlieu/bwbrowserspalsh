@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Mono', monospace;
+}
+
+.wrapper {
+  margin: 0 40% 0 10%;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 36px 0 24px 0;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  background-color: white;
+  border: 1px solid black;
+  font-size: 24px;
+  padding: 4px 12px 4px 12px;
+  font-family: 'Space Mono', monospace;
+  transition: background-color .2s, color .2s; 
+  box-shadow: 4px 4px 0px black;
+  margin-bottom: 36px;
+  margin-top: 16px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+
+button:focus {
+  outline: none;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 36px;
+}
+
+img {
+  filter: brightness(50%) grayscale(0%);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  margin-bottom: 36px;
+}
+
+/* Centered text */
+.centered {
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 3px black;
+  transition: all 0.2s ease;
+}
+
+.container:hover .centered {
+  opacity: 0;
+}
+
+.container:hover img {
+  filter: brightness(100%) grayscale(100%);
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    margin: 0 10% 0 10%;
+  }
+
+  .container {
+    display: none;
+  }
+}
+
+a {
+  color: black;
+}
